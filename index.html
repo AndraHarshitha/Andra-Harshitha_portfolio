@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harshitha Andra — Portfolio</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{margin:0;background:linear-gradient(180deg,#071029 0%, #071b2a 100%);color:#e6eef6}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042029}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .projects .project{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+    .thumb{width:110px;height:72px;border-radius:8px;background:linear-gradient(180deg,#0b2440,#0b1830);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+    .proj-title{margin:0;font-size:16px}
+    .tech{font-size:12px;color:var(--muted);margin-top:6px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042029;text-decoration:none;font-weight:600}
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+    .meta{display:flex;flex-direction:column;gap:8px}
+    .cert-list{list-style:none;padding:0;margin:0}
+    .cert-list li{padding:8px;border-radius:8px;background:rgba(255,255,255,0.02);margin-bottom:8px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    /* ====== Editable markers (delete comments when customizing) ======
+       Look for: <!-- REPLACE: ... --> in the HTML to customize with your content.
+    */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">HA</div>
+      <div>
+        <h1>Harshitha Andra</h1>
+        <p class="lead">AI / Computer Vision | Python | Data & ML enthusiast. Building real‑time systems and practical AI pipelines.</p>
+        <div style="margin-top:10px"><a class="btn" href="#projects">View Projects</a></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card about">
+          <h2>About</h2>
+          <p style="color:var(--muted)">Computer Engineering student and developer focusing on applied machine learning, computer vision, and building real‑time AI applications. I create practical, deployable systems using Python, AI models, and FastAPI, with clean UI demos and optimized performance.</p>
+          <p style="color:var(--muted);margin-top:10px"><strong>Highlights:</strong> Real‑time face recognition attendance app, gesture‑controlled game, voice‑enabled calculator, and deployable AI services built with FastAPI.</p>
+                  <div class="project">
+            <div class="thumb">Voice<br>Calc</div>
+            <div>
+              <h3 class="proj-title">Voice‑Enabled Calculator</h3>
+              <div class="tech">Python · SpeechRecognition · pyttsx3 · Regex</div>
+              <p style="color:var(--muted);margin-top:6px">A voice‑controlled calculator that listens to natural speech commands, converts them into mathematical expressions, and speaks the result back. Handles addition, subtraction, multiplication, division, and error conditions.</p>
+              <p style="color:var(--muted);font-size:13px;margin-top:6px"><strong>Repo:</strong> <a style="color:var(--accent)" href="https://github.com/AndraHarshitha/Voice-Enabled_Calculator_project" target="_blank">github.com/AndraHarshitha/Voice-Enabled_Calculator_project</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card projects" style="margin-top:16px">
+          <h2>Selected Projects</h2>
+
+          <div class="project">
+            <div class="thumb">Face<br>Rec</div>
+            <div>
+              <h3 class="proj-title">Real‑Time Face Recognition — Attendance System</h3>
+              <div class="tech">Python · OpenCV · mini_XCEPTION · Tkinter · SQLite</div>
+              <p style="color:var(--muted);margin-top:6px">A polished real‑time system that detects faces, recognizes identities, records attendance, and displays captured face, name, ID, and emotion status in the UI.</p>
+              <p style="color:var(--muted);font-size:13px;margin-top:6px"><strong>Repo:</strong> <a style="color:var(--accent)" href="https://github.com/AndraHarshitha/Attendance-System-In-Real-Time" target="_blank">github.com/AndraHarshitha/Attendance-System-In-Real-Time</a></p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="thumb">Emotion<br>Det</div>
+            <div>
+              <h3 class="proj-title">Emotion Detection — ML Demo</h3>
+              <div class="tech">Python · mini_XCEPTION · OpenCV</div>
+              <p style="color:var(--muted);margin-top:6px">A compact CNN‑based emotion detector integrated with a demo UI to visualize predictions on live webcam input.</p>
+              <p style="color:var(--muted);font-size:13px;margin-top:6px"><strong>Repo:</strong> <a style="color:var(--accent)" href="https://github.com/AndraHarshitha/Emotion_Detector_ML" target="_blank">github.com/AndraHarshitha/Emotion_Detector_ML</a></p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="thumb">Temple<br>Run</div>
+            <div>
+              <h3 class="proj-title">Gesture Controller — Temple Run</h3>
+              <div class="tech">Python · OpenCV · MediaPipe</div>
+              <p style="color:var(--muted);margin-top:6px">Hand‑gesture based controller that maps real‑time hand landmarks to game inputs, demonstrating low‑latency CV and input mapping.</p>
+              <p style="color:var(--muted);font-size:13px;margin-top:6px"><strong>Repo:</strong> <a style="color:var(--accent)" href="https://github.com/AndraHarshitha/Templerun_Gesture_Control" target="_blank">github.com/AndraHarshitha/Templerun_Gesture_Control</a></p>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Education</h2>
+          <p style="color:var(--muted)">B.Tech / Computer Science — <!-- REPLACE: College name & year --> <em style="color:#9aa4b2">Your College, 202X</em></p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card meta">
+          <h3>Skills</h3>
+          <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">AI Developer</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">OpenCV</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Pandas</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Certificates</h3>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:8px">Add certificate title + issuer + year below. You can paste certificate URLs in place of the placeholders.</p>
+          <ul class="cert-list">
+            <li><strong>Certificate of Completion — Python</strong> — Elewayte (Certificate No: CC220259532). Date: 22 April 2025.</li>
+            <li><strong>Certificate of Internship — Virtual Internship (Marketing / Data Science support)</strong> — Proptelligence. Duration: Sep 1, 2025 to Sep 30, 2025.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Contact</h3>
+          <p style="color:var(--muted);margin:0">Email: <strong style="color:#dff7ec">andraharshitha404@gmail.com</strong></p>
+          <p style="color:var(--muted);margin:6px 0">GitHub: <a style="color:var(--accent)" href="https://github.com/AndraHarshitha">github.com/AndraHarshitha</a>">github.com/username</a></p>
+          <p style="color:var(--muted);margin:6px 0">LinkedIn: <a style="color:var(--accent)" href="https://www.linkedin.com/in/andra-harshitha-34304a379?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">andra-harshitha</a></p>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>Made with ❤️ • Harshitha Andra</div>
+        <div style="color:var(--muted);font-size:13px">Tip: Replace placeholder links and screenshots with your repos & demo GIFs.</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ====== Quick deployment instructions (delete before publishing if you want) ======
+       1. Save this file as Harshitha_Andra_Portfolio.html
+       2. Create a new GitHub repo named username.github.io (replace username with your GitHub username)
+       3. Push this HTML file to the repo's root (index.html) and enable GitHub Pages in repo settings
+       4. Replace the placeholder links, screenshots, and certificate list with actual content
+       5. Need help adding images or building a multi-page site? Ask me and I will update this file.
+  -->
+
+</body>
+</html>
